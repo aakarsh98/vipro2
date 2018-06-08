@@ -49,8 +49,7 @@ selfMessage ="""
 ╠➩〘Micdel @〙
 ╠➩〘Miclist〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║
 ╚═════════════════════════
 """
 
@@ -69,8 +68,7 @@ botMessage ="""
 ╠➩〘@bye〙
 ╠➩〘Bot on/off〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║             
 ╚═════════════════════════
 """
 
@@ -108,8 +106,7 @@ mediaMessage ="""
 ╠➩〘Id@th Text (Translate ID Ke TH〙
 ╠➩〘En@id Text (Translate En Ke ID〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║             
 ╚═════════════════════════
 """
 
@@ -584,7 +581,7 @@ def bot(op):
                                 if " " in Name:
                                     nick = Name.split(' ')
                                     if len(nick) == 2:
-                                        vipro.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgintip Aja Niih. . .\nChat Kek Idiih (-__-)   ")
+                                        vipro.sendText(op.param1, "hey " + "☞ " + Name + " ☜" + "\nCome on join. . .\nChat Kek Idiih (-__-)   ")
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                     else:
@@ -592,7 +589,7 @@ def bot(op):
                                         time.sleep(0.2)
                                         summon(op.param1,[op.param2])
                                 else:
-                                    vipro.sendText(op.param1, "Haii " + "☞ " + Name + " ☜" + "\nNgapain Kak Ngintip Aja???\nSini Gabung Chat...   ")
+                                    vipro.sendText(op.param1, "hey " + "☞ " + Name + " ☜" + "\nWhat are you doin\nHere join chat...   ")
                                     time.sleep(0.2)
                                     summon(op.param1,[op.param2])
                         else:
@@ -866,7 +863,7 @@ def bot(op):
                  if wait["detectMention"] == True:
                      contact = vipro.getContact(msg.from_)
                      cName = contact.displayName
-                     balas = ["Dont Tag!! Lagi Sibuk",cName + " Ngapain Ngetag?",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
+                     balas = ["Dont Tag!!",cName + " Why tag me",cName + " Nggak Usah Tag-Tag! Kalo Penting Langsung Pc Aja","Dia Lagi Off", cName + " Kenapa Tag Saya?","Dia Lagi Tidur\nJangan Di Tag " + cName, "Jangan Suka Tag Gua " + cName, "Kamu Siapa " + cName + "?", "Ada Perlu Apa " + cName + "?","Woii " + cName + " Jangan Ngetag, Riibut!"]
                      ret_ = random.choice(balas)
                      name = re.findall(r'@(\w+)', msg.text)
                      mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -1517,9 +1514,9 @@ def bot(op):
                     wait["inviteprotect"] = True                   
                     wait["AutoKick"] = True
                     wait["Qr"] = True
-                    vipro.sendText(msg.to,"All Protect Sudah Aktif Semua")
+                    vipro.sendText(msg.to,"All Protect is All On")
 		else:
-		    vipro.sendText(msg.to,"Khusus Admin")
+		    vipro.sendText(msg.to, "Admin Only")
 
             elif msg.text in ["Allprotect off"]:
 		if msg.from_ in admin:
@@ -1593,8 +1590,8 @@ def bot(op):
 
             elif msg.text in ["Status"]:
                 md = ""
-		if wait["Sambutan"] == True: md+="╠➩✔️ Sambutan : On\n"
-		else:md+="╠➩❌ Sambutan : Off\n"
+		if wait["Welcome"] == True: md+="╠➩✔️ Welcome : On\n"
+		else:md+="╠➩❌ Welcome : Off\n"
 		if wait["AutoJoin"] == True: md+="╠➩✔️ Auto Join : On\n"
                 else: md +="╠➩❌ Auto Join : Off\n"
 		if wait["AutoJoinCancel"] == True: md+="╠➩✔️ Auto Join Cancel : On\n"
@@ -2274,7 +2271,7 @@ def bot(op):
 		if msg.from_ in admin:	 	        
 		    jml = msg.text.replace("Set member: ","")
 		    wait["Members"] = int(jml)
-		    vipro.sendText(msg.to, "Jumlah minimal member telah di set : "+jml)
+		    vipro.sendText(msg.to, "The minimum number of members has been set : "+jml)
 
 	    elif "Add all" in msg.text:
 		    thisgroup = vipro.getGroups([msg.to])
@@ -2292,7 +2289,7 @@ def bot(op):
 
             elif msg.text in ["Auto like"]:
                 wait["likeOn"] = True
-                vipro.sendText(msg.to,"Shere Post Kamu Yang Mau Di Like!")                
+                vipro.sendText(msg.to,"Share a post you want to like")                
 
 
             elif msg.text in ["Steal contact"]:
@@ -3394,7 +3391,7 @@ def bot(op):
 
 
             elif msg.text in ["Glist"]:
-                vipro.sendText(msg.to, "Tunggu Sebentar. . .")                    
+                vipro.sendText(msg.to, "Wait a min. . .")                    
                 gid = vipro.getGroupIdsJoined()
                 h = ""
                 for i in gid:
