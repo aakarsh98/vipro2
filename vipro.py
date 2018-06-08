@@ -12,7 +12,7 @@ import time,random,sys,json,codecs,threading,glob,urllib,urllib2,urllib3,re,ast,
 
 vipro = LINETCR.LINE()
 #vipro.login(qr=True)
-vipro.login(token='EpJgyNvzK8xQp88I04t9.2PnOnQMgNRHUYkUzkK6jEq./p92mOc1BPmafZPSgTcw4mkpBeT/czsWHBLRbK7Aewc=')
+vipro.login(token='EtreAY4sROkGaRpV3r64.+H+4j2NGxl6/07ut6bpbTa.BRsy6ofojw0dJQAeWWL6btuTQm2OM4mPSp/aVYJPues=')
 vipro.loginResult()
 print "Vipro-Login Success\n\n=====[Sukses Login]====="
 
@@ -143,11 +143,10 @@ groupMessage ="""
 ╠➩〘Getgroup image〙
 ╠➩〘Urlgroup Image〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║     
 ╚═════════════════════════
 """
-vip="uda936836a9869eb86ec8ab992a4e8979"
+vip="ufe1ff82769e05cbebed3b513e813c1b4"
 
 setMessage ="""
 ╔═════════════════════════
@@ -162,8 +161,7 @@ setMessage ="""
 ╠➩〘Sticker on〙
 ╠➩〘Simisimi on/off〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║          
 ╚═════════════════════════
 """
 
@@ -181,8 +179,7 @@ creatorMessage ="""
 ╠➩〘Bot restart〙
 ╠➩〘Turn off〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║            
 ╚═════════════════════════
 """
 
@@ -222,8 +219,7 @@ adminMessage ="""
 ╠➩〘Respon3 on/off〙
 ╠➩〘Responkick on/off〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║         
 ╚═════════════════════════
 """
 
@@ -243,8 +239,7 @@ helpMessage ="""
 ╠➩〘Speed test〙
 ╠➩〘Status〙
 ╠═════════════════════════
-║             💠 By : Vipro 💠
-║    〽️ line.me/ti/p/~gjxvipro 〽️
+║           
 ╚═════════════════════════
 """
 
@@ -252,8 +247,8 @@ helpMessage ="""
 KAC=[vipro]
 mid = vipro.getProfile().mid
 Bots=[mid]
-Creator=["uda936836a9869eb86ec8ab992a4e8979"]
-admin=["uda936836a9869eb86ec8ab992a4e8979"]
+Creator=["ufe1ff82769e05cbebed3b513e813c1b4"]
+admin=["ufe1ff82769e05cbebed3b513e813c1b4"]
 
 contact = vipro.getProfile()
 backup1 = vipro.getProfile()
@@ -286,7 +281,7 @@ wait = {
     'sticker':False,  
     'timeline':True,
     "Timeline":True,
-    "comment":"Bot Auto Like ©By : Vipro\nContact Me : 👉 line.me/ti/p/~gjxvipro",    
+    "comment":".",    
     "commentOn":True,
     "commentBlack":{},
     "message":"Thx For Add Me (^_^)\nInvite Me To Your Group ヘ(^_^)ヘ",    
